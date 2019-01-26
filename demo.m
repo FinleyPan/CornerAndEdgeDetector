@@ -8,5 +8,6 @@ imshow(uint8(edgeDetector(Img,3,1,1)));hold on;
 
 %% corners detection
 [corners,response] = goodCorners(Img,3,0.01,10,true,1/25);
-plot(corners(:,1),corners(:,2),'o','Color',[1 0 0]);
+cornersSubPix = cornerSubPix(RGB2Gray(Img),corners,[10 10],30,0.03);
+plot(cornersSubPix(:,1),cornersSubPix(:,2),'o','Color',[1 0 0]);
 
