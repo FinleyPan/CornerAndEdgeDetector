@@ -3,8 +3,14 @@
  </p>
  
  # Introduction
- 
 This is a MATLAB implementation for Harris corner detector and edge detector based on sobel kernel. It partially referred to the implementation of [OpenCV](https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_feature2d/py_features_harris/py_features_harris.html), and see [this tutorial](http://aishack.in/tutorials/harris-corner-detector/) for more details.   
+
+# Features
+- [x] method of Harris
+- [x] method of Shi-Tomasi
+- [x] non-maximum suppression
+- [x] subpixel accuracy
+- [x] immune to corner clustering
 
 # How to run
 **Prerequisite**: matlab 2014b or higher.  
